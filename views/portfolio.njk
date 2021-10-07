@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.njk" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&display=swap"rel="stylesheet">
+{%block head %}
+    <title>Portfolio | William Pereira</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>Aulas - William Pereira</title>
-</head>
+{% endblock %}
 
-<body>
-    <header>
-        <div class="links">
-            <a href="index.html">Sobre</a>
-            <a href="classes.html">Aulas</a>
-        </div>
-    </header>
-
+{%block content %}
+    
     <div id="wrapper">
         <h1>Aulas</h1>
     </div>
@@ -114,6 +102,4 @@
     </div>
 
     <script src="scripts.js"></script>
-</body>
-
-</html>
+    {% endblock %}
