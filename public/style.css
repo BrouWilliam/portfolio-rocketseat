@@ -80,6 +80,7 @@ header{
     background: var(--color-rocket);
     display: grid;
     align-items: center;
+    cursor: pointer;
 }
 .card__image-container  img{
     width: 100%;
@@ -141,7 +142,7 @@ iframe{
 
 /* ===  Featured === */
 
-.card__image-container{
+.featured-wrapper.card__image-container{
     position: relative;
 } .featured{
     background: #F7D05F;
