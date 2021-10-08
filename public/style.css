@@ -78,6 +78,8 @@ header{
 }
 .card{
     background: var(--color-rocket);
+    display: grid;
+    align-items: center;
 }
 .card__image-container  img{
     width: 100%;
