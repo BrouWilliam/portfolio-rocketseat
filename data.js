@@ -3,7 +3,8 @@ module.exports = [
         id:'rCeGfFk-uCk',
         title: 'Setup Projeto Node.Js',
         duraction: '57 min',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id: 'hN0zWNuZJC4',
@@ -21,13 +22,15 @@ module.exports = [
         id:'hN0zWNuZJC4',
         title: 'Setup',
         duraction: '57',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id:'hN0zWNuZJC4',
         title: 'Setup',
         duraction: '57',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id:'hN0zWNuZJC4',
