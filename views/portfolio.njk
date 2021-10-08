@@ -12,83 +12,23 @@
     </div>
 
     <section class="cards">
-        <div class="card" id="rCeGfFk-uCk">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/rCeGfFk-uCk/maxresdefault.jpg" alt="Vídeo aula">
-            </div>
-            <div class="card__content">
-                <p>Setup Projeto Node.Js</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
 
-        <div class="card" id="hN0zWNuZJC4">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/hN0zWNuZJC4/maxresdefault.jpg" alt="Vídeo aula">
-            </div>
-            <div class="card__content">
-                <p>Deno, Dashboard, Frustração na Carreira, Eject do Expo, Monorepo | #PR 08</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
+        {% for item in items %}
 
-        <div class="card">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/rCeGfFk-uCk/maxresdefault.jpg" alt="Vídeo aula">
+            <div class="card" id="{{item.id}}}">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+                </div>
+                <div class="card__content">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{item.duraction}}</p>
+                    <p class="card__price">{{item.price}}</p>
+                </div>
             </div>
-            <div class="card__content">
-                <p>Setup Projeto Node.Js</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
 
-        <div class="card">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/rCeGfFk-uCk/maxresdefault.jpg" alt="Vídeo aula">
-            </div>
-            <div class="card__content">
-                <p>Setup Projeto Node.Js</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/rCeGfFk-uCk/maxresdefault.jpg" alt="Vídeo aula">
-            </div>
-            <div class="card__content">
-                <p>Setup Projeto Node.Js</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/rCeGfFk-uCk/maxresdefault.jpg" alt="Vídeo aula">
-            </div>
-            <div class="card__content">
-                <p>Setup Projeto Node.Js</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
+        {% endfor %}
     </section>
 
     <div class="modal-overlay">
